@@ -13,10 +13,10 @@
 - `robots.txt`
 - `sitemap.xml`
 
-例如用户名是 `zouyana`，就改成：
+例如用户名是 `Chiltin`，就改成：
 
 ```
-https://zouyana.github.io/gsc-practice/
+https://Chiltin.github.io/gsc-practice/
 ```
 
 用记事本或 VS Code 的「全部替换」即可。
