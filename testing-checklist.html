@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Practical QA Checklist for Live Game Updates</title>
+<meta name="description" content="A short checklist for testing a live game update: smoke tests, core loops, edges, and the final pass before release.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Game QA Notes</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="testing-checklist.html">QA Checklist</a>
+    <a href="version-notes.html">Version Notes</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h1>A practical QA checklist for live game updates</h1>
+  <p class="lead">A short list you can actually finish before a release.</p>
+
+  <h2>Before testing</h2>
+  <ul>
+    <li>Read the patch notes and write down what changed.</li>
+    <li>Check that you are on the right build, server and account.</li>
+    <li>Prepare test data: a new account, a mid-level account, and an account with items.</li>
+  </ul>
+
+  <h2>Smoke test first</h2>
+  <ul>
+    <li>Can you log in, enter the game and reach the main screen?</li>
+    <li>Can you start a match or open the main feature that changed?</li>
+    <li>Does the game save progress and reload correctly?</li>
+  </ul>
+
+  <h2>Test the core loop</h2>
+  <ul>
+    <li>Play one full round from start to reward screen.</li>
+    <li>Check currency, items and progress after the round.</li>
+    <li>Repeat the same action twice to see if rewards are duplicated.</li>
+  </ul>
+
+  <h2>Test the edges</h2>
+  <ul>
+    <li>Empty input, very long input and invalid input.</li>
+    <li>No network, slow network and a disconnect in the middle of an action.</li>
+    <li>Low inventory, full inventory and a nearly full backpack.</li>
+    <li>Two devices logged in with the same account.</li>
+  </ul>
+
+  <h2>Before release</h2>
+  <ul>
+    <li>Re-run every bug that was fixed in this build.</li>
+    <li>Check the store, payment and reward flows one more time.</li>
+    <li>Write down what was tested, what was not, and what is still open.</li>
+  </ul>
+
+  <p>Back to <a href="index.html">the home page</a>, or read
+  <a href="version-notes.html">what to watch in every update</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <p>Game QA Notes - a small practice site built for learning SEO.</p>
+</footer>
+</body>
+</html>

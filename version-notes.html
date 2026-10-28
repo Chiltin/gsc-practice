@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What to Watch in Every Game Version Update</title>
+<meta name="description" content="Four parts of a live game that break most often after an update: UI state, economy, network sync, and platform-specific behavior.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Game QA Notes</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="testing-checklist.html">QA Checklist</a>
+    <a href="version-notes.html">Version Notes</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h1>What to watch in every game version update</h1>
+  <p class="lead">Four areas that account for most of the bugs I see.</p>
+
+  <h2>1. UI state after leaving a scene</h2>
+  <p>Menus, buffs and skill effects are easy to leave behind. When a player
+  leaves a match or a dungeon, check whether the interface still shows state
+  from the previous scene.</p>
+
+  <h2>2. Economy and rewards</h2>
+  <p>Any change to rewards, prices or drop rates should be tested twice. Look for
+  duplicated rewards, missing rewards, and values that do not match the design.
+  A single duplicated reward can turn into a real loss.</p>
+
+  <h2>3. Network and reconnects</h2>
+  <p>Test what happens when the network drops in the middle of an action. The
+  important question is not only whether the client recovers, but whether the
+  server state is still correct.</p>
+
+  <h2>4. Platform-specific behavior</h2>
+  <p>Mobile and PC builds can behave differently: screen size, performance,
+  payment channels and login methods. A feature that works on one platform is
+  not automatically tested on the other.</p>
+
+  <p>If you want a step-by-step list, see
+  <a href="testing-checklist.html">the QA checklist</a>. To learn more about this
+  site, visit <a href="about.html">the about page</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <p>Game QA Notes - a small practice site built for learning SEO.</p>
+</footer>
+</body>
+</html>
